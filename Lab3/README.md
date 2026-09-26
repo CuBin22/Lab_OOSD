@@ -47,13 +47,12 @@
 ## 6. Hướng dẫn Giảng viên kiểm tra và chạy lại chương trình
 
 1. **Chuẩn bị Cơ sở dữ liệu:**
-   * Mở Microsoft SQL Server Management Studio (SSMS).
-   * Tạo cơ sở dữ liệu cho project và chạy các script tạo bảng, chèn dữ liệu mẫu (đảm bảo bảng có các bản ghi trạng thái phù hợp như `"Đang ở"` hoặc danh mục nhân viên, dịch vụ).
+   * Thực hiện **Restore** database từ file `.bak` chuẩn của bài Lab (hoặc chạy script tạo bảng và chèn dữ liệu mẫu).
 2. **Cấu hình chuỗi kết nối (Connection String):**
    * Mở file `App.config` trong project Visual Studio.
-   * Kiểm tra và chỉnh sửa lại thông tin server name trong chuỗi kết nối (`connectionString`) cho khớp với máy của bạn.
+   * Kiểm tra và chỉnh sửa lại thông tin `Data Source` (tên Server) trong chuỗi kết nối sao cho khớp với cấu hình máy của bạn.
 3. **Mở và Chạy Project:**
    * Khởi động phần mềm **Visual Studio 2022**.
    * Mở file solution (`.sln`) của project Quản lý Khách sạn.
    * Trên thanh thực đơn, chọn **Build** -> **Clean Solution**, sau đó chọn **Build** -> **Rebuild Solution**.
-   * Nhấn nút **Start** (hoặc phím tắt `F5`) trên thanh công cụ để chạy ứng dụng và kiểm tra kết quả trên `FrmMain`.
+   * Nhấn nút **Start** (hoặc phím tắt `F5`) trên thanh công cụ để chạy ứng dụng từ `FrmMain`.
