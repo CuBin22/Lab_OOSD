@@ -17,7 +17,6 @@
 | Hệ điều hành | Windows 10/11 |
 | IDE | Visual Studio 2022 |
 | Nền tảng | .NET Framework 4.7.2, C# (Windows Forms) |
-| Truy cập dữ liệu | ADO.NET (`System.Data.SqlClient`), không dùng ORM |
 | CSDL | Microsoft SQL Server 2016 trở lên (Express hoặc LocalDB) |
 | Công cụ quản trị CSDL | SQL Server Management Studio (SSMS) |
 
