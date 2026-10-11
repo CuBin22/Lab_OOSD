@@ -90,21 +90,13 @@ Các kịch bản nghiệp vụ chính và kết quả mong đợi của chươn
 
 ## 5. Hướng dẫn giảng viên kiểm tra / chạy lại
 
-### Cách 1 : Restore file backup đã gửi
+### Restore file backup đã gửi
 
-File backup: **`QuanLyCongTyDuLich.bak`** (kèm trong bài nộp).
+File backup: **`DuLichBak.bak`** (kèm trong bài nộp).
 
 **Bằng giao diện SSMS**
 1. Kết nối SQL Server → chuột phải **Databases** → **Restore Database…**
 2. Chọn **Device** → `…` → **Add** → chọn file `DuLichBak.bak` → OK.
-3. Tên CSDL đích: `QuanLyCongTyDuLich`. Vào tab **Options**, tick **Overwrite the existing database (WITH REPLACE)** → **OK**.
-
-
-### Cách 2 (dự phòng): Tạo CSDL từ script
-Chạy lần lượt trong thư mục `Database`:
-1. `Script_Tao_CSDL_Cong_Ty_Du_Lich.sql`
-2. `Du_Lieu_Mau.sql`
-3. `Du_Lieu_Mau_DangKy.sql` *(tùy chọn: phiếu đăng ký, thanh toán, phân công mẫu)*
 
 ### Chạy chương trình
 1. Mở `QuanLyCongTyDuLich.sln` bằng Visual Studio 2022.
