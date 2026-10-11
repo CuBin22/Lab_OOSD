@@ -109,13 +109,7 @@ File backup: **`DuLichBak.bak`** (kèm trong bài nộp).
 
 ```
 QuanLyCongTyDuLich/
-├─ README.md
-├─ HUONG_DAN.md
 ├─ QuanLyCongTyDuLich.sln
-├─ Database/
-│  ├─ Script_Tao_CSDL_Cong_Ty_Du_Lich.sql
-│  ├─ Du_Lieu_Mau.sql
-│  └─ Du_Lieu_Mau_DangKy.sql
 └─ QuanLyCongTyDuLich/
    ├─ Forms/      (giao diện)
    ├─ Services/   (nghiệp vụ)
