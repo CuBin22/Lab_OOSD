@@ -90,32 +90,15 @@ Các kịch bản nghiệp vụ chính và kết quả mong đợi của chươn
 
 ## 5. Hướng dẫn giảng viên kiểm tra / chạy lại
 
-### Cách 1 (khuyến nghị): Restore file backup đã gửi
+### Cách 1 : Restore file backup đã gửi
 
 File backup: **`QuanLyCongTyDuLich.bak`** (kèm trong bài nộp).
 
 **Bằng giao diện SSMS**
 1. Kết nối SQL Server → chuột phải **Databases** → **Restore Database…**
-2. Chọn **Device** → `…` → **Add** → chọn file `QuanLyCongTyDuLich.bak` → OK.
+2. Chọn **Device** → `…` → **Add** → chọn file `DuLichBak.bak` → OK.
 3. Tên CSDL đích: `QuanLyCongTyDuLich`. Vào tab **Options**, tick **Overwrite the existing database (WITH REPLACE)** → **OK**.
 
-**Bằng T-SQL** (sửa đường dẫn cho đúng máy)
-```sql
-USE master;
-GO
--- Xem tên file logic bên trong bản backup
-RESTORE FILELISTONLY FROM DISK = N'C:\Backup\QuanLyCongTyDuLich.bak';
-GO
--- Nếu CSDL đang tồn tại và đang được dùng:
--- ALTER DATABASE QuanLyCongTyDuLich SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-
-RESTORE DATABASE QuanLyCongTyDuLich
-FROM DISK = N'C:\Backup\QuanLyCongTyDuLich.bak'
-WITH REPLACE, RECOVERY, STATS = 10;
--- Nếu thư mục dữ liệu khác máy gốc, thêm: MOVE N'<tên logic data>' TO N'<đường dẫn .mdf>', MOVE N'<tên logic log>' TO N'<đường dẫn .ldf>'
-GO
--- ALTER DATABASE QuanLyCongTyDuLich SET MULTI_USER;
-```
 
 ### Cách 2 (dự phòng): Tạo CSDL từ script
 Chạy lần lượt trong thư mục `Database`:
