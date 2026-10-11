@@ -5,7 +5,7 @@
 | **Họ và tên** | Trương Kiến Phi |
 | **MSSV** | 1250080141 |
 | **Lớp** | 12_ĐH_CNPM2 |
-| **Môn** | Thực hành Phân tích thiết kế hướng đối tượng – ĐH Công nghệ TP.HCM (HUTECH) |
+| **Môn** | Thực hành Phân tích thiết kế hướng đối tượng|
 | **Tên bài Lab** | Quản Lý Công Ty Du Lịch (công ty du lịch Văn Hóa Việt TP.HCM) |
 
 ---
