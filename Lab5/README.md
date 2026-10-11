@@ -71,7 +71,6 @@ Các kịch bản nghiệp vụ chính và kết quả mong đợi của chươn
 | 13 | Tour → *Xuất web* | Sinh file `.html` giới thiệu các tour, mở được bằng trình duyệt |
 | 14 | Xóa tour/khách/nhân viên đã phát sinh nghiệp vụ | Báo "đã phát sinh nghiệp vụ nên không thể xóa" |
 
-> *Ảnh chụp màn hình minh họa (nếu cần) đặt trong thư mục `Anh/`.*
 
 ---
 
