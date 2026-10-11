@@ -80,7 +80,6 @@ Các kịch bản nghiệp vụ chính và kết quả mong đợi của chươn
 | Lỗi | Nguyên nhân | Cách khắc phục |
 |---|---|---|
 | Mở chương trình báo **"Không kết nối được cơ sở dữ liệu QuanLyCongTyDuLich"** | Chuỗi kết nối trong `App.config` mặc định là `.\SQLEXPRESS`, máy dùng instance khác (LocalDB, `MSSQLSERVER`…) | Sửa `Data Source` trong `QuanLyCongTyDuLich/App.config` cho đúng, ví dụ `(localdb)\MSSQLLocalDB` hoặc `.` |
-| Chạy lại script dữ liệu mẫu báo **trùng khóa chính (Violation of PRIMARY KEY)** | `Du_Lieu_Mau*.sql` chỉ chạy được một lần trên CSDL trống | Chạy lại `Script_Tao_CSDL_Cong_Ty_Du_Lich.sql` (script tự xóa và tạo lại đối tượng) hoặc restore file backup |
 | Lập phiếu đoàn báo lỗi **"Ngày đi không được nằm trong quá khứ"** | Dữ liệu mẫu tạo ngày theo `GETDATE()`; chọn ngày đi nhỏ hơn hôm nay | Chọn ngày đi từ hôm nay trở đi |
 | Lập phiếu đoàn báo **số người phải > 12** dù nhập đúng 12 | Quy định: *trên* 12 người là khách đoàn; đúng 12 người xếp vào khách lẻ | Nhập ≥ 13 người, hoặc đăng ký theo chuyến (khách lẻ) |
 | Lỗi trigger **"đã hết chỗ" / "trùng lịch" / "vượt tổng tiền"** (mã 50004–50007) | Vi phạm quy tắc nghiệp vụ được kiểm tra ở cả tầng Service và trigger | Đây là thông báo từ chối có chủ đích, chương trình hiển thị lý do; điều chỉnh dữ liệu nhập |
