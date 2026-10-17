@@ -94,7 +94,13 @@ Các kịch bản nghiệp vụ chính và kết quả mong đợi (xem thêm fi
 
 ## 5. Hướng dẫn chạy
 
-1. Mở SSMS, kết nối SQL Server, mở file `Database/QuanLyBenhVien.sql` và nhấn **Execute** (script tự tạo CSDL `QuanLyBenhVien`, bảng, ràng buộc và dữ liệu mẫu; chạy lại được nhiều lần, mỗi lần sẽ xóa và tạo lại dữ liệu).
+### Restore file backup đã gửi
+
+File backup: **`BenhVienBak.bak`** (kèm trong bài nộp).
+
+**Bằng giao diện SSMS**
+1. Kết nối SQL Server → chuột phải **Databases** → **Restore Database…**
+2. Chọn **Device** → `…` → **Add** → chọn file `BenhVienBak.bak` → OK.
 2. Mở `QuanLyBenhVien.sln` bằng Visual Studio 2022.
 3. Kiểm tra `Data Source` trong `QuanLyBenhVien/App.config` (mặc định `.\SQLEXPRESS`; LocalDB: `(localdb)\MSSQLLocalDB`). Xác thực Windows (`Integrated Security=True`).
 4. Nhấn **F5** (Start). Màn hình chính có các nút: Danh mục, Đăng ký hồ sơ, Khám bệnh, Thanh toán, Tra cứu, Khám định kỳ, Thống kê. Thử nhanh với hồ sơ mẫu `HS001`, theo bảng kịch bản ở mục 3.
