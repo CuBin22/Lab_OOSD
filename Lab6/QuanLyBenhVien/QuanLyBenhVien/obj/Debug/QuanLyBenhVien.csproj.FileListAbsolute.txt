@@ -1,0 +1,10 @@
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.exe.config
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.exe
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.pdb
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.AssemblyReference.cache
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Properties.Resources.resources
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.GenerateResource.cache
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.CoreCompileInputs.cache
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.exe
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.pdb
+D:\Study\PhuongPhapPhatTrienPMHuongDoiTuong\QuanLyBenhVien\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.exe.config
