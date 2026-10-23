@@ -26,7 +26,7 @@ Kiến trúc 3 lớp tách biệt: **Forms (giao diện) → Services (nghiệp 
 
 ## 2. Nội dung đã thực hiện
 
-### 2.1. Cơ sở dữ liệu (file `Database/QuanLyNhanSu.sql`)
+### 2.1. Cơ sở dữ liệu 
 - 20 bảng: PhongBan, ChucVu, NhanVien, QuyetDinhTuyenDung, HopDong, HoSoBaoHiem, QuyetDinhChucVu, QuyetDinhLuong, KeHoachPhanCong, ChiTietPhanCong, PhieuChamCong, ChiTietChamCong, PhieuPhuTroi, ChiTietPhieuPhuTroi, BangLuong, ChiTietBangLuong, QuyetDinhKhenThuong, PhieuChiKhenThuong, QuyetDinhKyLuat, PhieuThuNopPhat.
 - Ràng buộc PK / FK / CHECK / UNIQUE theo quy tắc nghiệp vụ, ví dụ:
   - `QuyetDinhTuyenDung`: bắt buộc ghi phòng ban, thời gian thử việc (ngày kết thúc ≥ ngày bắt đầu), lương thử việc > 0 và điều khoản của hai bên.
