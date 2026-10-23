@@ -1,4 +1,4 @@
-# LAB8 – QUẢN LÝ NHÂN SỰ CÔNG TY SƠN ĐÔNG Á
+# LAB7 – QUẢN LÝ NHÂN SỰ CÔNG TY SƠN ĐÔNG Á
 
 | | |
 |---|---|
