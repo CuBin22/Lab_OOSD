@@ -1,10 +1,4 @@
-/* =====================================================================
-   CSDL: QUẢN LÝ CÔNG TY DU LỊCH
-   Hệ quản trị: Microsoft SQL Server 2016 trở lên (T-SQL)
-   Nội dung   : tạo CSDL, 18 bảng, khóa, ràng buộc CHECK/UNIQUE,
-                trigger cho ràng buộc liên bảng, stored procedure
-                lập phiếu đăng ký đoàn (1 transaction)
-   ===================================================================== */
+
 
 IF DB_ID(N'QuanLyCongTyDuLich') IS NULL
     CREATE DATABASE QuanLyCongTyDuLich COLLATE Vietnamese_CI_AS;
@@ -14,9 +8,7 @@ GO
 SET NOCOUNT ON;
 GO
 
-/* ---------------------------------------------------------------------
-   0. XÓA ĐỐI TƯỢNG CŨ (để chạy lại nhiều lần)
-   --------------------------------------------------------------------- */
+
 DROP PROCEDURE IF EXISTS dbo.sp_LapPhieuDoan;
 DROP TYPE IF EXISTS dbo.DSThanhVienDoan;
 DROP TABLE IF EXISTS dbo.PhieuKhaoSat;
@@ -42,17 +34,13 @@ DROP SEQUENCE IF EXISTS dbo.seq_MaTV;
 DROP SEQUENCE IF EXISTS dbo.seq_MaThanhToan;
 GO
 
-/* ---------------------------------------------------------------------
-   1. SEQUENCE sinh mã tự động
-   --------------------------------------------------------------------- */
+
 CREATE SEQUENCE dbo.seq_SoPhieu     AS int START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE dbo.seq_MaTV        AS int START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE dbo.seq_MaThanhToan AS int START WITH 1 INCREMENT BY 1;
 GO
 
-/* ---------------------------------------------------------------------
-   2. CÁC BẢNG DANH MỤC
-   --------------------------------------------------------------------- */
+
 CREATE TABLE dbo.Tour (
     MaTour   varchar(20)    NOT NULL,
     TenTour  nvarchar(100)  NOT NULL,
@@ -112,14 +100,11 @@ CREATE TABLE dbo.NhanVien (
 );
 GO
 
-/* ---------------------------------------------------------------------
-   3. LỘ TRÌNH TOUR
-   --------------------------------------------------------------------- */
 CREATE TABLE dbo.DungChan (
     MaDungChan     varchar(20)  NOT NULL,
     MaTour         varchar(20)  NOT NULL,
     MaDiaDiem      varchar(20)  NOT NULL,
-    MaPT           varchar(20)  NOT NULL,      -- phương tiện đi tới nơi dừng chân này
+    MaPT           varchar(20)  NOT NULL,     
     ThuTu          int          NOT NULL,
     DoiPhuongTien  bit          NOT NULL CONSTRAINT DF_DungChan_DoiPT  DEFAULT 0,
     CoNoiAn        bit          NOT NULL CONSTRAINT DF_DungChan_NoiAn  DEFAULT 0,
@@ -157,17 +142,15 @@ CREATE TABLE dbo.ChuyenTour (
 );
 GO
 
-/* ---------------------------------------------------------------------
-   4. KHÁCH HÀNG VÀ PHIẾU ĐĂNG KÝ
-   --------------------------------------------------------------------- */
+
 CREATE TABLE dbo.KhachHang (
     MaKH          varchar(20)    NOT NULL,
     TenKH         nvarchar(100)  NOT NULL,
     DiaChi        nvarchar(200)  NULL,
     DienThoai     varchar(15)    NULL,
     LoaiKhach     nvarchar(10)   NOT NULL,
-    NguoiDaiDien  nvarchar(100)  NULL,   -- chỉ dùng cho khách đoàn
-    SoCMND        varchar(20)    NULL,   -- chỉ dùng cho khách lẻ
+    NguoiDaiDien  nvarchar(100)  NULL,   
+    SoCMND        varchar(20)    NULL,  
     CONSTRAINT PK_KhachHang      PRIMARY KEY (MaKH),
     CONSTRAINT CK_KhachHang_Loai CHECK (LoaiKhach IN (N'Đoàn', N'Lẻ')),
     CONSTRAINT CK_KhachHang_TT   CHECK (
@@ -257,14 +240,12 @@ CREATE TABLE dbo.PhieuKhaoSat (
 );
 GO
 
-/* ---------------------------------------------------------------------
-   5. PHÂN CÔNG HƯỚNG DẪN VIÊN
-   --------------------------------------------------------------------- */
+
 CREATE TABLE dbo.PhanCong (
     MaPC          varchar(20)    NOT NULL,
     MaNV          varchar(20)    NOT NULL,
-    MaChuyen      varchar(20)    NULL,    -- phân công cho chuyến (khách lẻ)
-    SoPhieu       varchar(30)    NULL,    -- hoặc cho phiếu đoàn
+    MaChuyen      varchar(20)    NULL,    
+    SoPhieu       varchar(30)    NULL,   
     NgayBatDau    date           NOT NULL,
     NgayKetThuc   date           NOT NULL,
     TienCongTour  decimal(18,2)  NOT NULL CONSTRAINT DF_PC_TienCong DEFAULT 0,
@@ -277,13 +258,9 @@ CREATE TABLE dbo.PhanCong (
     CONSTRAINT CK_PC_Ngay          CHECK (NgayKetThuc >= NgayBatDau),
     CONSTRAINT CK_PC_TienCong      CHECK (TienCongTour >= 0)
 );
--- Mỗi chuyến lẻ chỉ có một nhân viên (đoàn có thể nhiều nhân viên)
 CREATE UNIQUE INDEX UQ_PhanCong_MaChuyen ON dbo.PhanCong(MaChuyen) WHERE MaChuyen IS NOT NULL;
 GO
 
-/* ---------------------------------------------------------------------
-   6. INDEX hỗ trợ truy vấn
-   --------------------------------------------------------------------- */
 CREATE INDEX IX_ChuyenTour_MaTour    ON dbo.ChuyenTour(MaTour, NgayDi);
 CREATE INDEX IX_PDK_MaKH             ON dbo.PhieuDangKy(MaKH);
 CREATE INDEX IX_PDKD_Tour_NgayDi     ON dbo.PhieuDangKyDoan(MaTour, NgayDi);
@@ -293,11 +270,8 @@ CREATE INDEX IX_TT_SoPhieu           ON dbo.ThanhToan(SoPhieu);
 CREATE INDEX IX_PC_MaNV              ON dbo.PhanCong(MaNV, NgayBatDau, NgayKetThuc);
 GO
 
-/* =====================================================================
-   7. TRIGGER – RÀNG BUỘC LIÊN BẢNG
-   ===================================================================== */
 
--- 7.1 Phiếu đoàn: ngày đi >= ngày lập; tiền cọc <= tổng tiền; không trùng phiếu
+
 CREATE TRIGGER dbo.trg_PhieuDangKyDoan_KiemTra
 ON dbo.PhieuDangKyDoan
 AFTER INSERT, UPDATE
@@ -319,7 +293,6 @@ BEGIN
         THROW 50002, N'Tiền đặt cọc không được vượt quá tổng tiền của phiếu.', 1;
     END;
 
-    -- Trùng phiếu: cùng khách, cùng tour, cùng ngày đi (bỏ qua phiếu đã hủy)
     IF EXISTS (
         SELECT 1
         FROM inserted i
@@ -333,7 +306,6 @@ BEGIN
 END;
 GO
 
--- 7.2 Phiếu khách lẻ: tổng số vé của chuyến không vượt SoChoToiDa
 CREATE TRIGGER dbo.trg_PhieuDangKyChuyen_ChoTrong
 ON dbo.PhieuDangKyChuyen
 AFTER INSERT, UPDATE
@@ -355,7 +327,6 @@ BEGIN
 END;
 GO
 
--- 7.3 Thành viên đoàn chỉ được lưu khi phiếu có mua bảo hiểm
 CREATE TRIGGER dbo.trg_ThanhVienDoan_BaoHiem
 ON dbo.ThanhVienDoan
 AFTER INSERT, UPDATE
@@ -371,7 +342,6 @@ BEGIN
 END;
 GO
 
--- 7.4 Tổng tiền thanh toán của một phiếu không vượt tổng tiền phiếu
 CREATE TRIGGER dbo.trg_ThanhToan_TongTien
 ON dbo.ThanhToan
 AFTER INSERT, UPDATE
@@ -390,7 +360,6 @@ BEGIN
 END;
 GO
 
--- 7.5 Một nhân viên không được phân công hai khoảng thời gian chồng nhau
 CREATE TRIGGER dbo.trg_PhanCong_TrungLich
 ON dbo.PhanCong
 AFTER INSERT, UPDATE
@@ -411,9 +380,7 @@ BEGIN
 END;
 GO
 
-/* =====================================================================
-   8. STORED PROCEDURE – LẬP PHIẾU ĐĂNG KÝ ĐOÀN (1 TRANSACTION)
-   ===================================================================== */
+
 CREATE TYPE dbo.DSThanhVienDoan AS TABLE (
     HoTen     nvarchar(100) NOT NULL,
     NgaySinh  date          NULL,
@@ -494,9 +461,7 @@ BEGIN
 END;
 GO
 
-/* =====================================================================
-   9. VÍ DỤ KIỂM THỬ (bỏ comment để chạy thử)
-   =====================================================================
+
 INSERT dbo.Tour (MaTour, TenTour, SoNgay, SoDem, DonGia) VALUES ('T01', N'Đà Lạt 3N2Đ', 3, 2, 3500000);
 INSERT dbo.KhachHang (MaKH, TenKH, DiaChi, DienThoai, LoaiKhach, NguoiDaiDien)
 VALUES ('KH01', N'Công ty ABC', N'TP.HCM', '0901234567', N'Đoàn', N'Nguyễn Văn A');
@@ -507,4 +472,3 @@ EXEC dbo.sp_LapPhieuDoan @MaKH='KH01', @MaTour='T01', @NgayDi='2026-12-20', @SoN
      @DiaChiDon=N'12 Nguyễn Huệ, Q1', @CoBaoHiem=0, @TienDatCoc=10000000,
      @DSThanhVien=@ds, @SoPhieu=@so OUTPUT;
 SELECT @so AS SoPhieuVuaLap;
-   ===================================================================== */
