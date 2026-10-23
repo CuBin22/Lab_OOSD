@@ -1,5 +1,4 @@
-﻿-- Database/QuanLyBenhVien.sql
--- Bài 5: Quản lý hồ sơ bệnh án của bệnh nhân (SQL Server)
+﻿
 IF DB_ID(N'QuanLyBenhVien') IS NULL CREATE DATABASE QuanLyBenhVien;
 GO
 USE QuanLyBenhVien;
@@ -23,7 +22,6 @@ IF OBJECT_ID('BenhNhan','U') IS NOT NULL DROP TABLE BenhNhan;
 IF OBJECT_ID('NhanVien','U') IS NOT NULL DROP TABLE NhanVien;
 GO
 
--- ===================== DANH MỤC =====================
 CREATE TABLE NhanVien(
  MaNV varchar(20) NOT NULL PRIMARY KEY,
  HoTen nvarchar(120) NOT NULL,
@@ -56,7 +54,6 @@ CREATE TABLE Thuoc(
  TacDungPhu nvarchar(250) NULL
 );
 
--- ===================== ĐĂNG KÝ - HỒ SƠ - LỆ PHÍ =====================
 CREATE TABLE BenhNhan(
  MaBN varchar(20) NOT NULL PRIMARY KEY,
  HoTen nvarchar(120) NOT NULL,
@@ -107,7 +104,6 @@ CREATE TABLE LichHen(
  CONSTRAINT FK_LichHen_HoSo FOREIGN KEY(MaHoSo) REFERENCES HoSoBenhAn(MaHoSo)
 );
 
--- ===================== KHÁM BỆNH =====================
 CREATE TABLE PhieuKham(
  SoPhieuKham varchar(30) NOT NULL PRIMARY KEY,
  MaHoSo varchar(30) NOT NULL,
@@ -174,21 +170,15 @@ CREATE TABLE ThanhToanVienPhi(
 );
 GO
 
--- ===================== INDEX =====================
--- Mỗi lịch hẹn chỉ tạo tối đa một phiếu khám (MaLichHen có thể NULL)
 CREATE UNIQUE INDEX UQ_PhieuKham_LichHen ON PhieuKham(MaLichHen) WHERE MaLichHen IS NOT NULL;
--- Tra cứu hồ sơ theo họ tên / ngày sinh / điện thoại
 CREATE INDEX IX_BenhNhan_HoTen_NgaySinh ON BenhNhan(HoTen,NgaySinh);
 CREATE INDEX IX_BenhNhan_DienThoai ON BenhNhan(DienThoai);
--- Lịch sử khám theo hồ sơ và theo bác sĩ
 CREATE INDEX IX_PhieuKham_HoSo ON PhieuKham(MaHoSo,NgayGioKham);
 CREATE INDEX IX_PhieuKham_BacSi ON PhieuKham(MaBS,NgayGioKham);
 CREATE INDEX IX_XetNghiem_Phieu ON XetNghiem(SoPhieuKham);
 CREATE INDEX IX_LichHen_HoSo ON LichHen(MaHoSo,NgayGioHen);
 GO
 
--- ===================== TRIGGER =====================
--- Không xóa phiếu khám đã ghi nhận (truy vết trách nhiệm bác sĩ)
 CREATE TRIGGER TR_PhieuKham_ChanXoa ON PhieuKham
 INSTEAD OF DELETE
 AS
@@ -197,7 +187,6 @@ BEGIN
 END;
 GO
 
--- ===================== DỮ LIỆU MẪU (DANH MỤC) =====================
 INSERT INTO NhanVien(MaNV,HoTen,BoPhan) VALUES
 ('NV01',N'Nguyễn Thu Hà',N'Chăm sóc khách hàng'),
 ('NV02',N'Trần Minh An',N'Xét nghiệm'),
