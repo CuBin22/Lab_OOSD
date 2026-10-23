@@ -16,10 +16,7 @@ IF OBJECT_ID('dbo.KhuVuc','U') IS NOT NULL DROP TABLE dbo.KhuVuc;
 IF OBJECT_ID('dbo.KhachHang','U') IS NOT NULL DROP TABLE dbo.KhachHang;
 GO
 
--- Lưu ý: Thông tin sản phẩm do Hệ thống quản lý sản phẩm quản lý (BR03, QĐ02)
--- nên không tạo bảng SanPham/NhomSanPham; chỉ lưu MaSanPham tham chiếu mềm (không có khóa ngoại).
 
--- 1. Bảng Khách Hàng
 CREATE TABLE dbo.KhachHang (
     MaKhachHang NVARCHAR(20) NOT NULL PRIMARY KEY,
     Ho NVARCHAR(50) NOT NULL,
@@ -29,20 +26,18 @@ CREATE TABLE dbo.KhachHang (
     DiaChi NVARCHAR(250) NOT NULL,
     SoDienThoai NVARCHAR(20) NOT NULL,
     TenDangNhap NVARCHAR(50) NOT NULL,
-    MatKhauHash NVARCHAR(256) NOT NULL,  -- QĐ10: lưu mật khẩu dạng băm
-    Email NVARCHAR(150) NULL,            -- Không bắt buộc, dùng nhận email xác nhận
+    MatKhauHash NVARCHAR(256) NOT NULL,  
+    Email NVARCHAR(150) NULL,          
     CONSTRAINT UQ_KhachHang_TenDangNhap UNIQUE (TenDangNhap),
     CONSTRAINT UQ_KhachHang_CMND UNIQUE (SoCMND_Passport),
     CONSTRAINT CK_KhachHang_NgaySinh CHECK (NgaySinh <= CAST(GETDATE() AS DATE))
 );
 
--- 2. Bảng Khu Vực giao hàng
 CREATE TABLE dbo.KhuVuc (
     MaKhuVuc NVARCHAR(20) NOT NULL PRIMARY KEY,
     TenKhuVuc NVARCHAR(100) NOT NULL UNIQUE
 );
 
--- 3. Bảng Loại Phiếu Đặt Hàng (thường, chuyển phát nhanh, chuyển phát nhanh trong ngày)
 CREATE TABLE dbo.LoaiPhieuDat (
     MaLoaiPhieu NVARCHAR(20) NOT NULL PRIMARY KEY,
     TenLoaiPhieu NVARCHAR(100) NOT NULL UNIQUE,
@@ -51,19 +46,17 @@ CREATE TABLE dbo.LoaiPhieuDat (
     CONSTRAINT CK_LoaiPhieuDat_Nguong CHECK (NguongMienPhi IS NULL OR NguongMienPhi > 0)
 );
 
--- 4. Bảng Loại Thẻ tín dụng
 CREATE TABLE dbo.LoaiThe (
     MaLoaiThe NVARCHAR(20) NOT NULL PRIMARY KEY,
-    TenLoaiThe NVARCHAR(50) NOT NULL UNIQUE,   -- Visa, Master, Discover, American Express
-    SoChuSoThe INT NOT NULL,                   -- BR14: 16 hoặc 15
-    SoChuSoCSV INT NOT NULL,                   -- BR15: 3 hoặc 4
+    TenLoaiThe NVARCHAR(50) NOT NULL UNIQUE,   
+    SoChuSoThe INT NOT NULL,                
+    SoChuSoCSV INT NOT NULL,                  
     LePhi DECIMAL(18,0) NOT NULL CONSTRAINT DF_LoaiThe_LePhi DEFAULT(0),  -- BR17
     CONSTRAINT CK_LoaiThe_SoChuSoThe CHECK (SoChuSoThe IN (15,16)),
     CONSTRAINT CK_LoaiThe_SoChuSoCSV CHECK (SoChuSoCSV IN (3,4)),
     CONSTRAINT CK_LoaiThe_LePhi CHECK (LePhi >= 0)
 );
 
--- 5. Bảng Phí Giao Hàng (theo khu vực và loại phiếu - BR11)
 CREATE TABLE dbo.BangPhiGiaoHang (
     MaKhuVuc NVARCHAR(20) NOT NULL,
     MaLoaiPhieu NVARCHAR(20) NOT NULL,
@@ -73,7 +66,6 @@ CREATE TABLE dbo.BangPhiGiaoHang (
     CONSTRAINT FK_BangPhi_LoaiPhieu FOREIGN KEY (MaLoaiPhieu) REFERENCES dbo.LoaiPhieuDat(MaLoaiPhieu)
 );
 
--- 6. Bảng Giỏ Hàng (lưu theo phiên, gắn tài khoản khi đăng nhập - QĐ05)
 CREATE TABLE dbo.GioHang (
     MaGioHang NVARCHAR(30) NOT NULL PRIMARY KEY,
     MaKhachHang NVARCHAR(20) NULL,
@@ -83,21 +75,18 @@ CREATE TABLE dbo.GioHang (
     CONSTRAINT FK_GioHang_KhachHang FOREIGN KEY (MaKhachHang) REFERENCES dbo.KhachHang(MaKhachHang)
 );
 
--- Ràng buộc: Mỗi khách hàng chỉ có một giỏ hàng đang sử dụng
 CREATE UNIQUE INDEX UX_GioHang_MotGioHoatDong
 ON dbo.GioHang (MaKhachHang) WHERE TrangThai = 1 AND MaKhachHang IS NOT NULL;
 
--- 7. Bảng Chi Tiết Giỏ Hàng
 CREATE TABLE dbo.ChiTietGioHang (
     MaChiTiet NVARCHAR(35) NOT NULL PRIMARY KEY,
     MaGioHang NVARCHAR(30) NOT NULL,
-    MaSanPham NVARCHAR(20) NOT NULL,     -- Tham chiếu Hệ thống quản lý sản phẩm
+    MaSanPham NVARCHAR(20) NOT NULL,     
     SoLuong INT NOT NULL CONSTRAINT CK_CTGH_SoLuong CHECK (SoLuong > 0),
     CONSTRAINT UQ_CTGH_Gio_SanPham UNIQUE (MaGioHang, MaSanPham),
     CONSTRAINT FK_CTGH_GioHang FOREIGN KEY (MaGioHang) REFERENCES dbo.GioHang(MaGioHang)
 );
 
--- 8. Bảng Đơn Đặt Hàng (gồm thông tin người nhận - QĐ14)
 CREATE TABLE dbo.DonDatHang (
     MaDonHang NVARCHAR(30) NOT NULL PRIMARY KEY,
     MaKhachHang NVARCHAR(20) NOT NULL,   -- Người mua
@@ -118,7 +107,6 @@ CREATE TABLE dbo.DonDatHang (
     CONSTRAINT FK_DonDatHang_LoaiPhieu FOREIGN KEY (MaLoaiPhieu) REFERENCES dbo.LoaiPhieuDat(MaLoaiPhieu)
 );
 
--- 9. Bảng Chi Tiết Đơn Hàng (đơn giá chốt tại thời điểm đặt - QĐ03)
 CREATE TABLE dbo.ChiTietDonHang (
     MaChiTiet NVARCHAR(35) NOT NULL PRIMARY KEY,
     MaDonHang NVARCHAR(30) NOT NULL,
@@ -129,7 +117,6 @@ CREATE TABLE dbo.ChiTietDonHang (
     CONSTRAINT FK_CTDH_DonDatHang FOREIGN KEY (MaDonHang) REFERENCES dbo.DonDatHang(MaDonHang)
 );
 
--- 10. Bảng Thanh Toán (không lưu mã CSV, chỉ lưu 4 số cuối của thẻ - QĐ09)
 CREATE TABLE dbo.ThanhToan (
     MaThanhToan NVARCHAR(35) NOT NULL PRIMARY KEY,
     MaDonHang NVARCHAR(30) NOT NULL,
@@ -146,7 +133,6 @@ CREATE TABLE dbo.ThanhToan (
     CONSTRAINT FK_ThanhToan_LoaiThe FOREIGN KEY (MaLoaiThe) REFERENCES dbo.LoaiThe(MaLoaiThe)
 );
 
--- 11. Bảng Nhật Ký Email xác nhận (gửi bất đồng bộ, lỗi thì thử lại - QĐ13)
 CREATE TABLE dbo.NhatKyEmail (
     MaEmail NVARCHAR(35) NOT NULL PRIMARY KEY,
     MaDonHang NVARCHAR(30) NOT NULL,
@@ -160,7 +146,6 @@ CREATE TABLE dbo.NhatKyEmail (
 );
 GO
 
--- Dữ liệu cấu hình ban đầu (QĐ07)
 INSERT INTO dbo.LoaiPhieuDat (MaLoaiPhieu, TenLoaiPhieu, ThoiGianXuLyGio, NguongMienPhi) VALUES
 (N'THUONG', N'Thường', 72, NULL),
 (N'NHANH', N'Chuyển phát nhanh', 24, 1000000),
