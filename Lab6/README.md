@@ -26,7 +26,7 @@ Kiến trúc 3 lớp tách biệt: **Forms (giao diện) → Services (nghiệp 
 
 ## 2. Nội dung đã thực hiện
 
-### 2.1. Cơ sở dữ liệu (file `Database/QuanLyBenhVien.sql`)
+### 2.1. Cơ sở dữ liệu 
 - 15 bảng: NhanVien, Khoa, BacSi, LoaiXetNghiem, Thuoc, BenhNhan, PhieuDangKy, HoSoBenhAn, LePhi, LichHen, PhieuKham, XetNghiem, ToaThuoc, ChiTietToaThuoc, ThanhToanVienPhi.
 - Ràng buộc PK / FK / CHECK / UNIQUE theo quy tắc nghiệp vụ, ví dụ:
   - `UNIQUE(MaBN)` trên HoSoBenhAn: mỗi bệnh nhân một hồ sơ; trạng thái hồ sơ chỉ gồm *Còn hiệu lực, Hết hạn, Đã đóng*.
