@@ -6,7 +6,7 @@
 | **MSSV** | 1250080141 |
 | **Lớp** | 12_ĐH_CNPM2 |
 | **Môn** | Thực hành Phân tích thiết kế hướng đối tượng |
-| **Tên bài Lab** | Quản lý cửa hàng nước giải khát (Bài 2) |
+| **Tên bài Lab** | Quản lý cửa hàng nước giải khát  |
 
 ---
 
