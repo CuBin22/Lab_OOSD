@@ -2,11 +2,11 @@
 
 | | |
 |---|---|
-| **Họ và tên** | [Điền họ tên của bạn] |
-| **MSSV** | [Điền MSSV của bạn] |
-| **Lớp** | [Điền Lớp của bạn] |
+| **Họ và tên** | Trương Kiến Phi |
+| **MSSV** | 1250080141 |
+| **Lớp** | 12_ĐH_CNPM2 |
 | **Môn** | Thực hành Phân tích thiết kế hướng đối tượng |
-| **Tên bài Lab** | Quản lý cửa hàng nước (Bài 8) |
+| **Tên bài Lab** | Quản lý cửa hàng nước|
 
 ---
 
