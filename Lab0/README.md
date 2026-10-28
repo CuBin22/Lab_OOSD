@@ -1,8 +1,8 @@
 # BÁO CÁO THỰC HÀNH LAB 00
 ## HỌC PHẦN: PHƯƠNG PHÁP PHÁT TRIỂN PHẦN MỀM HƯỚNG ĐỐI TƯỢNG
 
-- **Sinh viên thực hiện:** Trần Nguyên
-- **Mã số sinh viên (MSSV):** 1250080121
+- **Sinh viên thực hiện:** Trương Kiến Phi
+- **Mã số sinh viên (MSSV):** 1250080141
 - **Email:** 1250080121@sv.hcmunre.edu.vn
 - **Trường:** Đại học Tài nguyên và Môi trường TP.HCM (HCMUNRE)
 - **Hệ điều hành:** Windows 11 64-bit (x64)
@@ -29,8 +29,8 @@
    - `mvn -version` -> Apache Maven 3.9.11 (Java home đồng bộ)
    - `git --version` -> Git 2.52.0.windows.1
 2. Cấu hình Git:
-   - `git config --global user.name "Trần Nguyên"`
-   - `git config --global user.email "1250080121@sv.hcmunre.edu.vn"`
+   - `git config --global user.name "Trương Kiến Phi"`
+   - `git config --global user.email "1250080141@sv.hcmunre.edu.vn"`
 3. Kiểm thử và đóng gói Starter Project:
    - `mvn clean test` -> BUILD SUCCESS (JUnit 5 pass)
    - `mvn package` -> Tạo file JAR `target/library-ooad-labs-1.0.0.jar`
@@ -40,7 +40,7 @@
 
 ## 3. Cấu trúc thư mục nộp bài
 ```text
-Lab00_1250080121_TranNguyen/
+Lab00_1250080121_TruongKienPhi/
 ├── README.md
 ├── environment.txt
 ├── submission_checklist.md
@@ -63,7 +63,7 @@ Trong quá trình thiết lập và chạy thử nghiệm môi trường, sinh v
 1. **Sự cố đường dẫn chứa ký tự tiếng Việt có dấu (`InvalidPathException`):**
    - *Hiện tượng:* Khi mở project từ thư mục học kỳ trên Desktop (`.../NĂM 4 HK1/phương pháp phát triển phần mềm hướng đối tượng`), trình biên dịch Java và IntelliJ báo lỗi `java.nio.file.InvalidPathException: Illegal char <?> at index 49`.
    - *Nguyên nhân gốc:* JVM và một số plugin build tool trên Windows xử lý encoding đường dẫn có dấu tiếng Việt/khoảng trắng chưa tương thích hoàn toàn.
-   - *Cách khắc phục triệt để:* Đặt workspace chuẩn tại `D:\OOAD-Labs\Lab00_1250080121_TranNguyen` (đường dẫn thuần ASCII ngắn gọn theo khuyến nghị tại Mục 3 và Trang 4 của Lab guide). Đồng thời tạo Windows Directory Junction (`mklink /J`) trỏ từ thư mục học kỳ ở ổ C sang ổ D để vừa biên dịch trơn tru 100%, vừa đồng bộ lưu trữ học kỳ.
+   - *Cách khắc phục triệt để:* Đặt workspace chuẩn tại `D:\OOAD-Labs\Lab00_1250080141_TruongKienPhi` (đường dẫn thuần ASCII ngắn gọn theo khuyến nghị tại Mục 3 và Trang 4 của Lab guide). Đồng thời tạo Windows Directory Junction (`mklink /J`) trỏ từ thư mục học kỳ ở ổ C sang ổ D để vừa biên dịch trơn tru 100%, vừa đồng bộ lưu trữ học kỳ.
 
 2. **Sự cố bộ đệm biến môi trường trên Terminal:**
    - *Hiện tượng:* Sau khi bổ sung `JAVA_HOME` và `MAVEN_HOME` vào Environment Variables, lệnh `mvn -version` trong cửa sổ console cũ vẫn báo không tìm thấy lệnh hoặc nhận phiên bản Java cũ.
