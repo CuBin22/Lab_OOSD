@@ -38,26 +38,7 @@
 
 ---
 
-## 3. Cấu trúc thư mục nộp bài
-```text
-Lab00_1250080121_TruongKienPhi/
-├── README.md
-├── environment.txt
-├── submission_checklist.md
-├── pom.xml
-├── src/
-│   ├── main/java/vn/edu/hcmunre/library/app/Main.java
-│   └── test/java/vn/edu/hcmunre/library/app/MainTest.java
-├── evidence/
-│   ├── screenshots/
-│   └── logs/
-├── docs/
-└── uml/
-```
-
----
-
-## 4. Nhật ký xử lý sự cố (Troubleshooting Log)
+## 3. Nhật ký xử lý sự cố (Troubleshooting Log)
 Trong quá trình thiết lập và chạy thử nghiệm môi trường, sinh viên ghi nhận và xử lý các sự cố kỹ thuật sau:
 
 1. **Sự cố đường dẫn chứa ký tự tiếng Việt có dấu (`InvalidPathException`):**
@@ -76,7 +57,7 @@ Trong quá trình thiết lập và chạy thử nghiệm môi trường, sinh v
 
 ---
 
-## 5. Tự đánh giá hoàn thành (Checklist)
+## 4. Tự đánh giá hoàn thành (Checklist)
 - [x] Đầy đủ cấu hình JDK, Maven, Git, IntelliJ và PlantUML.
 - [x] Dự án biên dịch và chạy thành công qua cả IntelliJ IDEA Run button và Maven CLI (`mvn clean test package`).
 - [x] Đã lưu trữ toàn bộ ảnh chụp màn hình minh chứng tại `evidence/screenshots/` và log lệnh tại `evidence/logs/`.
