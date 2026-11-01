@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="Thiet_ke_Thong_ke" name="Thiet_ke_Thong_ke">
+    <mxGraphModel dx="1318" dy="2020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1318" pageHeight="2020" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=none;fillColor=none;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="690" width="214" height="246.8" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="" style="shape=ellipse;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="2" vertex="1">
+          <mxGeometry x="80" y="0" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="58" y="8" as="sourcePoint" />
+            <mxPoint x="58" y="72" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="58" y="40" as="sourcePoint" />
+            <mxPoint x="80" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="FrmThongKe" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="2" vertex="1">
+          <mxGeometry x="0" y="94" width="214" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="(from Giao dien)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="2" vertex="1">
+          <mxGeometry x="0" y="128" width="214" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="160" as="sourcePoint" />
+            <mxPoint x="214" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="166" as="sourcePoint" />
+            <mxPoint x="214" y="166" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="btnTK_Click()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="2" vertex="1">
+          <mxGeometry x="0" y="176.0" width="214" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="btnDong_Click()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="2" vertex="1">
+          <mxGeometry x="0" y="209.4" width="214" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="454" y="690" width="232" height="174.8" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="ThongKeService" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="12" vertex="1">
+          <mxGeometry x="6" y="8" width="220" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="(from Dieu khien)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="12" vertex="1">
+          <mxGeometry x="6" y="42" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="232" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="92" as="sourcePoint" />
+            <mxPoint x="232" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="TongHop()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="12" vertex="1">
+          <mxGeometry x="14" y="100.0" width="208" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="DichVu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="12" vertex="1">
+          <mxGeometry x="14" y="133.4" width="208" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="928" y="32" width="360" height="575.5999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="PhieuDatPhong" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="6" y="8" width="348" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="(from Thuc the)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="6" y="42" width="348" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="360" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="SoPhieuDat : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="84.0" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="NgayLap : DateTime" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="117.4" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="NgayNhan : Date" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="150.8" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="NgayTraDuKien : Date" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="184.2" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="TienCoc : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="217.6" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="KenhDat : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="251.0" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="TrangThai : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="284.4" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="NgayNhanThucTe : DateTime" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26.5;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="317.79999999999995" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="NgayTraThucTe : DateTime" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="351.2" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="392.59999999999997" as="sourcePoint" />
+            <mxPoint x="360" y="392.59999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" value="themPhieuDat()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="400.59999999999997" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="layTrangThai()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="433.99999999999994" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="capNhatTrangThai()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="467.4" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="layPhieuDangO()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="500.79999999999995" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="demPhieuDat()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="19" vertex="1">
+          <mxGeometry x="14" y="534.1999999999999" width="336" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="928" y="672" width="316" height="475.4" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="HoaDon" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="6" y="8" width="304" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="(from Thuc the)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="6" y="42" width="304" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="316" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" value="SoHoaDon : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="84.0" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="NgayLap : DateTime" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="117.4" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="SoNgayTinhTien : Integer" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26.5;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="150.8" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="TienPhong : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="184.2" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="TienDichVu : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="217.6" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="TongTien : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="251.0" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="TrangThai : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="284.4" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="325.79999999999995" as="sourcePoint" />
+            <mxPoint x="316" y="325.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="50" value="themHoaDon()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="333.79999999999995" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="layTrangThai()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="367.19999999999993" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="capNhatTrangThai()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="400.59999999999997" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="tongDoanhThu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="38" vertex="1">
+          <mxGeometry x="14" y="433.99999999999994" width="292" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="928" y="1214" width="288" height="308.4" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="PhieuDenBu" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="6" y="8" width="276" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="(from Thuc the)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="6" y="42" width="276" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="288" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="58" value="SoPhieuDenBu : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="14" y="84.0" width="264" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="NgayLap : DateTime" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="14" y="117.4" width="264" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="TongTien : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="14" y="150.8" width="264" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="192.2" as="sourcePoint" />
+            <mxPoint x="288" y="192.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62" value="themPhieuDenBu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="14" y="200.2" width="264" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="themChiTietDenBu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="14" y="233.6" width="264" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="tongDenBu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="54" vertex="1">
+          <mxGeometry x="14" y="267.0" width="264" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1636" width="286" height="308.4" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="PhieuSuDungDV" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="6" y="8" width="274" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="(from Thuc the)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="6" y="42" width="274" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="65" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="286" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="69" value="SoPhieuSDDV : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="14" y="84.0" width="262" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="NgaySuDung : Date" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="14" y="117.4" width="262" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="65" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="158.8" as="sourcePoint" />
+            <mxPoint x="286" y="158.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="72" value="timPhieu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="14" y="166.8" width="262" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="taoPhieu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="14" y="200.20000000000002" width="262" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="layLichSu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="14" y="233.60000000000002" width="262" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="tongHopTheoDichVu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="65" vertex="1">
+          <mxGeometry x="14" y="267.0" width="262" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="76" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="414" y="1636" width="326" height="308.4" as="geometry" />
+        </mxCell>
+        <mxCell id="77" value="ChiTietPhieuSuDungDV" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="6" y="8" width="314" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="78" value="(from Thuc the)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="6" y="42" width="314" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="79" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="76" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="326" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="80" value="SoLuong : Integer" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="14" y="84.0" width="302" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="81" value="DonGia : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="14" y="117.4" width="302" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="82" value="ThanhTien : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="14" y="150.8" width="302" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="83" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="76" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="192.2" as="sourcePoint" />
+            <mxPoint x="326" y="192.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="84" value="kiemTraDichVu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="14" y="200.2" width="302" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="85" value="themChiTiet()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="14" y="233.6" width="302" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="86" value="congDonSoLuong()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="76" vertex="1">
+          <mxGeometry x="14" y="267.0" width="302" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="87" value="" style="shape=rectangle;html=0;rounded=0;strokeColor=#CC0044;fillColor=#FFFFCC;strokeWidth=2;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="838" y="1636" width="244" height="341.79999999999995" as="geometry" />
+        </mxCell>
+        <mxCell id="88" value="DichVu" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="6" y="8" width="232" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="89" value="(from Thuc the)" style="text;html=0;whiteSpace=wrap;overflow=visible;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=22;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="6" y="42" width="232" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="90" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="76" as="sourcePoint" />
+            <mxPoint x="244" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91" value="MaDV : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="84.0" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="92" value="TenDV : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="117.4" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="93" value="DonViTinh : String" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="150.8" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="94" value="DonGia : Decimal" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="184.2" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="95" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=none;endFill=0;endSize=10;startArrow=none;" parent="87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="225.6" as="sourcePoint" />
+            <mxPoint x="244" y="225.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="96" value="themDichVu()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="233.6" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="97" value="layDanhSach()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="267.0" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="98" value="layDonGia()" style="text;html=0;whiteSpace=wrap;overflow=visible;align=left;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontStyle=0;fontColor=#111111;fillColor=none;strokeColor=none;" parent="87" vertex="1">
+          <mxGeometry x="14" y="300.4" width="220" height="33.4" as="geometry" />
+        </mxCell>
+        <mxCell id="99" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.43;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="3" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="730.0" as="sourcePoint" />
+            <mxPoint x="454" y="765.164" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="100" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=0.96;exitY=0;entryX=0;entryY=0.76;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="12" target="19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="676.72" y="690.0" as="sourcePoint" />
+            <mxPoint x="928" y="469.45599999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="101" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=1;exitY=0.66;entryX=0;entryY=0.42;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="12" target="38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="686" y="805.368" as="sourcePoint" />
+            <mxPoint x="928" y="871.668" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="102" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=0.83;exitY=1;entryX=0.04;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="12" target="54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="646.56" y="864.8" as="sourcePoint" />
+            <mxPoint x="939.52" y="1214.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=0.35;exitY=1;entryX=0.7;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="12" target="65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535.2" y="864.8" as="sourcePoint" />
+            <mxPoint x="230.2" y="1636.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="104" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="12" target="76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570.0" y="864.8" as="sourcePoint" />
+            <mxPoint x="577.0" y="1636.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="105" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#CC0044;strokeWidth=2;endArrow=open;endFill=0;endSize=10;startArrow=none;exitX=0.65;exitY=1;entryX=0.23;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" edge="1" source="12" target="87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="604.8" y="864.8" as="sourcePoint" />
+            <mxPoint x="894.12" y="1636.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
