@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device">
+  <diagram id="usecase-details" name="Phân rã Use Case: Trả phòng - thanh toán">
+    <mxGraphModel dx="1528" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1528" pageHeight="822" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="base" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="10" y="338" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="base_ellipse" value="" vertex="1" parent="base" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="base_label_0" value="Tra phong -" vertex="1" parent="base" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="base_label_1" value="thanh toan" vertex="1" parent="base" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="122" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="base_origin" value="(from Use Case View)" vertex="1" parent="base" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=24;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="164" width="440" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tiennghi" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="698" y="38" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="tiennghi_ellipse" value="" vertex="1" parent="tiennghi" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tiennghi_label_0" value="Kiem tra tien nghi" vertex="1" parent="tiennghi" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="hoadon" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="698" y="238" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="hoadon_ellipse" value="" vertex="1" parent="hoadon" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hoadon_label_0" value="Lap hoa don" vertex="1" parent="hoadon" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="thanhtoan" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="698" y="438" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="thanhtoan_ellipse" value="" vertex="1" parent="thanhtoan" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="thanhtoan_label_0" value="Ghi nhan thanh toan" vertex="1" parent="thanhtoan" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="hoantat" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="698" y="638" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="hoantat_ellipse" value="" vertex="1" parent="hoantat" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hoantat_label_0" value="Hoan tat tra phong" vertex="1" parent="hoantat" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="denbu" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="1276" y="38" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="denbu_ellipse" value="" vertex="1" parent="denbu" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="denbu_label_0" value="Lap phieu den bu" vertex="1" parent="denbu" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="denbu_note" value="[co hu hong / mat]" vertex="1" parent="denbu" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=24;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="132" width="440" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="kiemtra" value="" vertex="1" parent="1" style="shape=rectangle;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="1276" y="638" width="240" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="kiemtra_ellipse" value="" vertex="1" parent="kiemtra" style="shape=ellipse;html=0;whiteSpace=wrap;overflow=visible;strokeColor=#C90046;fillColor=#FFFFCC;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="31.0" y="0" width="178" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kiemtra_label_0" value="Kiem tra hoa don" vertex="1" parent="kiemtra" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="88" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="kiemtra_label_1" value="da thanh toan" vertex="1" parent="kiemtra" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=28;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="-100" y="122" width="440" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" edge="1" parent="1" source="tiennghi_ellipse" target="base_ellipse" style="edgeStyle=none;html=0;rounded=0;strokeColor=#C90046;strokeWidth=2.4;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.14114065696643469;exitY=0.848166586446083;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.8588593430335656;entryY=0.15183341355391705;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="754.1230369400254" y="105.85332691568664" as="sourcePoint" />
+            <mxPoint x="193.87696305997468" y="350.14667308431336" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e0_label" value="&lt;&lt;extend&gt;&gt;" vertex="1" parent="1" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="392" y="148" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" edge="1" parent="1" source="hoadon_ellipse" target="base_ellipse" style="edgeStyle=none;html=0;rounded=0;strokeColor=#C90046;strokeWidth=2.4;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.024259874758784238;exitY=0.6538549096892012;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9757401252412158;entryY=0.34614509031079876;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="733.3182577070636" y="290.3083927751361" as="sourcePoint" />
+            <mxPoint x="214.6817422929364" y="365.6916072248639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1_label" value="&lt;&lt;extend&gt;&gt;" vertex="1" parent="1" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="406" y="266" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" edge="1" parent="1" source="thanhtoan_ellipse" target="base_ellipse" style="edgeStyle=none;html=0;rounded=0;strokeColor=#C90046;strokeWidth=2.4;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.024259874758784238;exitY=0.34614509031079876;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9757401252412158;entryY=0.6538549096892012;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="733.3182577070636" y="465.6916072248639" as="sourcePoint" />
+            <mxPoint x="214.6817422929364" y="390.3083927751361" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_label" value="&lt;&lt;extend&gt;&gt;" vertex="1" parent="1" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="416" y="372" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" edge="1" parent="1" source="hoantat_ellipse" target="base_ellipse" style="edgeStyle=none;html=0;rounded=0;strokeColor=#C90046;strokeWidth=2.4;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.14114065696643469;exitY=0.15183341355391775;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.8588593430335656;entryY=0.848166586446083;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="754.1230369400254" y="650.1466730843134" as="sourcePoint" />
+            <mxPoint x="193.87696305997468" y="405.85332691568664" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3_label" value="&lt;&lt;extend&gt;&gt;" vertex="1" parent="1" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="434" y="470" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e_denbu" value="" edge="1" parent="1" source="denbu_ellipse" target="tiennghi_ellipse" style="edgeStyle=none;html=0;rounded=0;strokeColor=#C90046;strokeWidth=2.4;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=0.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1307.0" y="78.0" as="sourcePoint" />
+            <mxPoint x="907.0" y="78.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_denbu_label" value="&lt;&lt;extend&gt;&gt;" vertex="1" parent="1" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="1018" y="30" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="include" value="" edge="1" parent="1" source="hoantat_ellipse" target="kiemtra_ellipse" style="edgeStyle=none;html=0;rounded=0;strokeColor=#C90046;strokeWidth=2.4;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endFill=0;endSize=10;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="907.0" y="678.0" as="sourcePoint" />
+            <mxPoint x="1307.0" y="678.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include_label" value="&lt;&lt;include&gt;&gt;" vertex="1" parent="1" style="shape=text;html=0;whiteSpace=wrap;overflow=visible;strokeColor=none;fillColor=none;strokeWidth=2.4;align=center;verticalAlign=middle;spacing=0;fontFamily=Times New Roman;fontSize=26;fontColor=#000000;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry x="1016" y="630" width="180" height="36" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
